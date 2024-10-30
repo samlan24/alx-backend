@@ -13,7 +13,6 @@ class LIFOCache (BaseCaching):
     def put(self, key, item):
         """put method"""
         if key and item:
-
             if key not in self.cache_data:
                 self.order.append(key)
 
